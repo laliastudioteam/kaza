@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family==Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.btn-slide {
+    position: absolute;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.8s;
+    &:hover {
+        opacity: 1;
+    }
+}
+.prev {
+    left: 0px;
+    &:hover {
+        left: 20px;
+    }
+}
+.next {
+    right: 0px;
+    &:hover {
+        right: 20px;
+    }
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family==Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 4px - 30px);
+  background-color: #ff6060;
+  color: #fff;
+  padding: 10px 20px 10px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 2px solid #ff6060;
+  cursor: pointer;
+}
+.accordion-title-active {
+  transform: rotate(180deg);
+}
+.accordion-title-chevron {
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+}
+.accordion-title-chevron-img {
+  width: 20px;
+  height: 20px;
+}
+.accordion-title:hover {
+  color: #ff6060;
+  background-color: #f6f6f6;
+}
+.accordion-title:hover .accordion-title-chevron {
+  transform: rotate(0deg);
+}
+.accordion-content {
+  display: flex;
+  width: calc(100% - 20px);
+  color: #000;
+  background-color: #f6f6f6;
+  padding: 10px;
+}/*# sourceMappingURL=Accordion.css.map */

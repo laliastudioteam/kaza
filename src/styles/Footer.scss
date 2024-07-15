@@ -1,0 +1,46 @@
+@import "base";
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 210px;
+    background-color: $color1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        width: 250px;
+
+        @media screen and (max-width: (
+            $maxsize_medium
+        )) {
+            width: 100%;
+            margin: $gridspace 0px;
+        }
+
+        &-logo {
+            width: 250px;
+            justify-content: center;
+            text-align: center;
+
+            @media screen and (max-width: (
+                $maxsize_medium
+            )) {
+                width: 100%;
+            }
+        }
+        &-baseline {
+            margin-top: 20px;
+            color: white;
+        }
+    }
+}

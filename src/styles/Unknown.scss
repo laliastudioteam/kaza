@@ -1,0 +1,26 @@
+@import "base";
+
+.unknown {
+    width: calc(100% - ($gridspace * 2));
+    background: $color3;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: $gridspace;
+    margin: $gridspace 0px;
+
+    &-content {
+        &-title {
+            font-size: 288px;
+            color: $color4;
+            font-weight: 700;
+        }
+        &-text {
+            font-size: 36px;
+            color: $color4;
+            font-weight: 500;
+        }
+    }
+}

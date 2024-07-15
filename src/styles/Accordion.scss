@@ -1,0 +1,52 @@
+@import "base";
+
+$border-accordion: 2px;
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%);
+    margin-bottom: 30px;
+    &-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: calc(100% - (2 * $border-accordion) - 30px);
+        background-color: $color4;
+        color: $color2;
+        padding: 10px 20px 10px 10px;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 10px;
+        border: $border-accordion solid $color4;
+        cursor: pointer;
+        &-active {
+            transform: rotate(180deg);
+        }
+        &-chevron {
+            width: 20px;
+            height: 20px;
+            transform: rotate(180deg);
+            &-img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &:hover {
+            color: $color4;
+            background-color: $color3;
+        }
+        &:hover & {
+            &-chevron {
+                transform: rotate(0deg);
+            }
+        }
+    }
+    &-content {
+        display: flex;
+        width: calc(100% - 20px);
+        color: $color1;
+        background-color: $color3;
+        padding: 10px;
+    }
+}

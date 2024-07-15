@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family==Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.fiche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fiche-cover {
+  width: 100%;
+  max-height: 420px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.fiche-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+}
+@media screen and (max-width: 992px) {
+  .fiche-content {
+    flex-direction: column;
+  }
+}
+.fiche-content-left {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+  padding-right: 10px;
+}
+@media screen and (max-width: 992px) {
+  .fiche-content-left {
+    width: 100%;
+  }
+}
+.fiche-content-left-title-zone {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.fiche-content-left-title-zone-title {
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+.fiche-content-left-title-zone-location {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+.fiche-content-left-tags-zone {
+  display: flex;
+  flex-direction: row;
+}
+.fiche-content-left-tags-zone-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+.fiche-content-left-tags-zone-list-tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #ff6060;
+  border-radius: 10px;
+  padding: 0px 3px;
+  color: #f6f6f6;
+  font-size: 14px;
+  font-weight: 700;
+  border: 2px solid #ff6060;
+}
+.fiche-content-left-tags-zone-list-tag:hover {
+  background-color: #f6f6f6;
+  color: #ff6060;
+}
+.fiche-content-right {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+  align-items: flex-end;
+  padding-right: 10px;
+}
+@media screen and (max-width: 992px) {
+  .fiche-content-right {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+.fiche-content-right-host-zone {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fiche-content-right-host-zone-name {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 18px;
+}
+.fiche-content-right-host-zone-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+  margin-left: 30px;
+}
+.fiche-content-list-equipements {
+  list-style: none;
+  padding-left: 0;
+}
+.fiche-content-list-equipements-equipement:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #ff6060;
+}/*# sourceMappingURL=Fiche.css.map */

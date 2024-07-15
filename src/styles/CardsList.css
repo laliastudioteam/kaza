@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family==Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.cardsList {
+  width: calc(100% - 40px);
+  background: #f6f6f6;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px 0px;
+}
+@media screen and (max-width: 992px) {
+  .cardsList {
+    max-width: 992px;
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .cardsList {
+    max-width: 992px;
+    width: 100%;
+    padding: 0;
+  }
+}
+.cardsList-card {
+  width: 340px;
+  height: 340px;
+  display: flex;
+  align-items: self-end;
+  border: 3px solid #f6f6f6;
+  color: #fff;
+  border-radius: 10px;
+  background: #ff6060;
+  overflow: hidden;
+  transition: transform 1s, box-shadow 1s;
+  position: relative;
+  margin: 20px;
+}
+@media screen and (max-width: 992px) {
+  .cardsList-card {
+    width: calc(50% - gridspace);
+    margin: 0px 0px 20px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cardsList-card {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+}
+.cardsList-card-link {
+  height: 100%;
+  width: 100%;
+}
+.cardsList-card-link-image {
+  display: block;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 1s, filter 1s;
+  width: 100%;
+  height: 100%;
+}
+.cardsList-card-link-image:hover {
+  transform: scale(1.2);
+  filter: brightness(0.5);
+}
+.cardsList-card-link-title {
+  display: flex;
+  width: calc(100% - 40px);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #000;
+  transition: all 1s;
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+  text-wrap: wrap;
+}
+.cardsList-card-link:hover .cardsList-card-link-title {
+  background: #ff6060;
+  bottom: 30px;
+}
+.cardsList-card:hover .cardsList-card-title {
+  background: #ff6060;
+  bottom: 30px;
+}
+.cardsList-card:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 0.5);
+  border: 3px solid #ff6060;
+}/*# sourceMappingURL=CardsList.css.map */
