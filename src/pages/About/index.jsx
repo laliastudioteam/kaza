@@ -3,7 +3,7 @@ import Accordion from '../../components/Accordion'
 
 function About() {
   return (
-    <div class="about">
+    <div className="about">
       <Jumbotron
         jumbotron={{
           picture: 'background-about.jpg',
