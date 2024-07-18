@@ -18,6 +18,11 @@
   font-weight: 500;
   margin-left: 30px;
 }
+@media screen and (max-width: 992px) {
+  .navigation-list-element {
+    font-size: 18px;
+  }
+}
 .navigation-list-element-link-active {
   text-decoration: underline;
   color: #000;

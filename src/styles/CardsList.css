@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family==Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .cardsList {
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   background: #f6f6f6;
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
-  margin: 20px 0px;
+  padding: 10px;
+  margin: 10px 0px;
 }
 @media screen and (max-width: 992px) {
   .cardsList {
     max-width: 992px;
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
   }
 }
 @media screen and (max-width: 768px) {
@@ -35,18 +35,18 @@
   overflow: hidden;
   transition: transform 1s, box-shadow 1s;
   position: relative;
-  margin: 20px;
+  margin: 10px;
 }
 @media screen and (max-width: 992px) {
   .cardsList-card {
     width: calc(50% - gridspace);
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
   }
 }
 @media screen and (max-width: 768px) {
   .cardsList-card {
     width: 100%;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 10px 0px;
   }
 }
 .cardsList-card-link {

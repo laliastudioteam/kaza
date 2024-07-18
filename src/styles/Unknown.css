@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family==Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .unknown {
-  width: calc(100% - 40px);
+  width: calc(100% - 20px);
   background: #f6f6f6;
   border-radius: 25px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding: 20px;
-  margin: 20px 0px;
+  padding: 10px;
+  margin: 10px 0px;
 }
 .unknown-content-title {
   font-size: 288px;
