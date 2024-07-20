@@ -11,26 +11,20 @@ function Fichelogement() {
   // GET ID fiche
   const { id } = useParams()
 
-  console.log(id)
-
   const navigate = useNavigate()
 
   // If NO ID
   let selectedfiche = []
 
-  if ((selectedfiche = data.filter((element) => id.includes(element.id)))) {
-    console.log('ouch')
-  }
-
-  useEffect(() => {
-    if (selectedfiche.length === 0) {
-      navigate(`/home`)
-    }
-  })
+  selectedfiche = data.filter((element) => id.includes(element.id))
 
   // Controle Fiche
 
-  //console.log(selectedfiche.length)
+  useEffect(() => {
+    if (selectedfiche.length === 0) {
+      navigate(`/Unknown`)
+    }
+  })
 
   return (
     <>

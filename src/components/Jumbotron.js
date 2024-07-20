@@ -12,7 +12,7 @@ function Jumbotron(data) {
         }}
       >
         <div className="jumbotron-content">
-          {data.jumbotron.title != '' && (
+          {data.jumbotron.title !== '' && (
             <div className="jumbotron-content-text">{data.jumbotron.title}</div>
           )}
         </div>

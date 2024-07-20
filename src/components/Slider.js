@@ -43,11 +43,17 @@ function Slider({ data }) {
           </div>
         )
       })}
-      <BtnSlider moveSliderPicture={nextSlide} to={'next'} />
-      <BtnSlider moveSliderPicture={prevSlide} to={'previous'} />
-      <div className="slider-container-text">
-        {pictureIndex}/{data.length}
-      </div>
+      {data.length > 1 && (
+        <BtnSlider moveSliderPicture={nextSlide} to={'next'} />
+      )}
+      {data.length > 1 && (
+        <BtnSlider moveSliderPicture={prevSlide} to={'previous'} />
+      )}
+      {data.length > 1 && (
+        <div className="slider-container-text">
+          {pictureIndex}/{data.length}
+        </div>
+      )}
     </div>
   )
 }
