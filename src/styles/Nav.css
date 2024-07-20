@@ -12,11 +12,23 @@
   list-style: none;
   justify-content: flex-end;
   width: 100%;
+  padding-left: 0px;
+}
+@media screen and (max-width: 576px) {
+  .navigation-list {
+    justify-content: space-around;
+  }
 }
 .navigation-list-element {
   font-size: 24px;
   font-weight: 500;
   margin-left: 30px;
+}
+@media screen and (max-width: 576px) {
+  .navigation-list-element {
+    justify-content: center;
+    margin-left: 0px;
+  }
 }
 @media screen and (max-width: 992px) {
   .navigation-list-element {

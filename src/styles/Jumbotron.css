@@ -38,6 +38,7 @@
   color: #fff;
   text-shadow: 1px 1px 2px #000;
   width: 100%;
+  margin-left: 30px;
 }
 @media screen and (max-width: 992px) {
   .jumbotron-content-text {
@@ -45,5 +46,10 @@
     font-size: 24px;
     width: 30%;
     text-align: left;
+  }
+}
+@media screen and (max-width: 576px) {
+  .jumbotron-content-text {
+    width: 100%;
   }
 }/*# sourceMappingURL=Jumbotron.css.map */

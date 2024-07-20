@@ -45,6 +45,9 @@ function Slider({ data }) {
       })}
       <BtnSlider moveSliderPicture={nextSlide} to={'next'} />
       <BtnSlider moveSliderPicture={prevSlide} to={'previous'} />
+      <div className="slider-container-text">
+        {pictureIndex}/{data.length}
+      </div>
     </div>
   )
 }

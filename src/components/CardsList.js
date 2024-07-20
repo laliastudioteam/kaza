@@ -6,10 +6,7 @@ function CardsList({ dataLogements }) {
     <div className="cardsList">
       {dataLogements.map((logement, index) => (
         <div className="cardsList-card" key={logement.id}>
-          <Link
-            to={`../fiche?id=${logement.id}`}
-            className="cardsList-card-link"
-          >
+          <Link to={`../fiche/${logement.id}`} className="cardsList-card-link">
             <div
               className="cardsList-card-link-image"
               style={{

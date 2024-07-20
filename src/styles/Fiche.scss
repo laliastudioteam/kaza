@@ -39,6 +39,10 @@
                     font-size: 36px;
                     font-weight: 500;
                     color: $color4;
+
+                    @media screen and (max-width: ($maxsize_extrasmall)) {
+                        font-size: 24px;
+                    }
                 }
                 &-location {
                     font-size: 18px;
@@ -49,11 +53,17 @@
             &-tags-zone {
                 display: flex;
                 flex-direction: row;
+                width: 100%;
                 &-list {
                     list-style: none;
                     display: flex;
                     flex-direction: row;
                     padding-left: 0;
+                    width: 100%;
+
+                    @media screen and (max-width: ($maxsize_extrasmall)) {
+                        flex-direction: column;
+                    }
                     &-tag {
                         display: flex;
                         align-items: center;
@@ -68,6 +78,12 @@
                         font-size: 14px;
                         font-weight: 700;
                         border: 2px solid $color4;
+
+                        @media screen and (max-width: ($maxsize_extrasmall)) {
+                            overflow: hidden;
+                            width: 100%;
+                            margin-bottom: 10px;
+                        }
                         &:hover {
                             background-color: $color3;
                             color: $color4;

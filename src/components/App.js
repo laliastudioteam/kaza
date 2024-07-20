@@ -9,7 +9,7 @@ import Footer from './Footer'
 import Home from '../pages/Home/'
 import About from '../pages/About/'
 import Fichelogement from '../pages/Fichelogement'
-import Unknown from '../pages/Unknown'
+import NotFound from '../pages/NotFound'
 
 import '../styles/App.css'
 
@@ -23,9 +23,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
-              <Route path="/fiche" element={<Fichelogement />} />
+              <Route path="/fiche/:id" element={<Fichelogement />} />
               <Route path="/about" element={<About />} />
-              <Route path="*" element={<Unknown />} />
+              <Route path="/notfound" element={<NotFound />} />
+              <Route path="/*" element={<NotFound />} />
             </Routes>
           </Router>
         </div>

@@ -13,10 +13,18 @@
         list-style: none;
         justify-content: flex-end;
         width: 100%;
+        padding-left: 0px;
+        @media screen and (max-width: ($maxsize_extrasmall)) {
+            justify-content: space-around;
+        }
         &-element {
             font-size: 24px;
             font-weight: 500;
             margin-left: 30px;
+            @media screen and (max-width: ($maxsize_extrasmall)) {
+                justify-content: center;
+                margin-left: 0px;
+            }
             @media screen and (max-width: ($maxsize_medium)) {
                 font-size: 18px;
             }

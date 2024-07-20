@@ -1,6 +1,6 @@
 @import "base";
 
-.unknown {
+.notfound {
     width: calc(100% - ($gridspace * 2));
     background: $color3;
     border-radius: 25px;
@@ -10,17 +10,42 @@
     justify-content: center;
     padding: $gridspace;
     margin: $gridspace 0px;
+    height: calc(100% - $gridspace * 2);
 
     &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: calc(100vh - 100px - 210px - 100px);
+        padding: 20px;
         &-title {
             font-size: 288px;
             color: $color4;
             font-weight: 700;
+            flex: 1;
+            @media screen and (max-width: ($maxsize_medium)) {
+                font-size: 96px;
+            }
         }
         &-text {
             font-size: 36px;
             color: $color4;
             font-weight: 500;
+            flex: 1;
+
+            @media screen and (max-width: ($maxsize_medium)) {
+                font-size: 18px;
+            }
+        }
+        &-link {
+            font-size: 18px;
+            color: $color1;
+            font-weight: 500;
+            flex: 1;
+
+            @media screen and (max-width: ($maxsize_medium)) {
+                font-size: 14px;
+            }
         }
     }
 }

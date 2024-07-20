@@ -1,6 +1,7 @@
 import React from 'react'
+import { useEffect } from 'react'
 
-import { useSearchParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 
 import Fiche from '../../components/Fiche'
 
@@ -8,26 +9,38 @@ import data from '../../data/logements.json'
 
 function Fichelogement() {
   // GET ID fiche
-  const [searchParams] = useSearchParams()
-  const id = searchParams.get('id')
+  const { id } = useParams()
+
+  console.log(id)
 
   const navigate = useNavigate()
 
   // If NO ID
+  let selectedfiche = []
 
-  const selectedfiche = data.filter((element) => id.includes(element.id))
+  if ((selectedfiche = data.filter((element) => id.includes(element.id)))) {
+    console.log('ouch')
+  }
+
+  useEffect(() => {
+    if (selectedfiche.length === 0) {
+      navigate(`/home`)
+    }
+  })
 
   // Controle Fiche
 
-  if (selectedfiche.length === 0) {
-    navigate('./home')
-  }
+  //console.log(selectedfiche.length)
 
   return (
     <>
-      <Fiche
-        selectedfiche={{ id: selectedfiche[0].id, data: selectedfiche[0] }}
-      />
+      {selectedfiche.length > 0 ? (
+        <Fiche
+          selectedfiche={{ id: selectedfiche[0].id, data: selectedfiche[0] }}
+        />
+      ) : (
+        <div>Fiche inconnue</div>
+      )}
     </>
   )
 }

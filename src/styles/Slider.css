@@ -19,6 +19,13 @@
 .slider-container-slide {
   display: none;
 }
+.slider-container-text {
+  position: absolute;
+  bottom: 30px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 .active-anim {
   display: block;

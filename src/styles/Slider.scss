@@ -20,6 +20,14 @@
     &-slide {
         display: none;
     }
+
+    &-text {
+        position: absolute;
+        bottom: 30px;
+        color: $color2;
+        font-size: 18px;
+        font-weight: 500;
+    }
 }
 .active-anim {
     display: block;
