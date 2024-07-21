@@ -13,7 +13,6 @@ body {
   min-height: calc(100vh - 250px);
   margin: auto;
 
-  //some CSS
   @media screen and (max-width: ($maxsize_medium)) {
     width: calc(100% - calc($margin_container * 2));
     max-width: $maxsize_medium;

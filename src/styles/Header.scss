@@ -7,8 +7,6 @@
     flex-direction: row;
     align-items: center;
 
-    //some CSS
-
     @media screen and (max-width: ($maxsize_extrasmall)) {
         max-width: $maxsize_medium;
         height: 110px;
@@ -32,7 +30,7 @@
         &-logo {
             width: 210px;
             height: 68px;
-            //some CSS
+
             @media screen and (max-width: ($maxsize_medium)) {
                 width: 130px;
                 height: 42px;
