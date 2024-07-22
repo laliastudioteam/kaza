@@ -11,7 +11,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header-content">
-        <NavLink to="./home">
+        <NavLink to="./">
           <img src={logoHeader} className="header-content-logo" />
         </NavLink>
         <Nav />

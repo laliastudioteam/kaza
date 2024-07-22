@@ -11,7 +11,7 @@ function Unknown() {
           Oups! La page que vous demandez n'existe pas.
         </div>
         <div className="notfound-content-link">
-          <NavLink to="/home" className="notfound-content-link">
+          <NavLink to="/" className="notfound-content-link">
             Retourner sur la page d'accueil
           </NavLink>
         </div>
