@@ -8,7 +8,7 @@ function Slider({ data }) {
   const nextSlide = () => {
     if (pictureIndex !== data.length) {
       setSlideIndex(pictureIndex + 1)
-    } else if (pictureIndex === data.length) {
+    } else {
       setSlideIndex(1)
     }
   }
@@ -16,7 +16,7 @@ function Slider({ data }) {
   const prevSlide = () => {
     if (pictureIndex !== 1) {
       setSlideIndex(pictureIndex - 1)
-    } else if (pictureIndex === 1) {
+    } else {
       setSlideIndex(data.length)
     }
   }

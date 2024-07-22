@@ -5,12 +5,11 @@ function Jumbotron(data) {
 
   return (
     <>
-      <div
-        className="jumbotron"
-        style={{
-          background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageUrl}) no-repeat`,
-        }}
-      >
+      <div className="jumbotron">
+        <div
+          className="jumbotron-img"
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        ></div>
         <div className="jumbotron-content">
           {data.jumbotron.title !== '' && (
             <div className="jumbotron-content-text">{data.jumbotron.title}</div>

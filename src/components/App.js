@@ -22,10 +22,8 @@ function App() {
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
               <Route path="/fiche/:id" element={<Fichelogement />} />
               <Route path="/about" element={<About />} />
-              <Route path="/notfound" element={<NotFound />} />
               <Route path="/*" element={<NotFound />} />
             </Routes>
           </Router>
